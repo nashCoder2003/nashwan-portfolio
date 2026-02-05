@@ -4,18 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nashwan Islam | Portfolio</title>
-
-  <meta
-    name="description"
-    content="Nashwan Islam — Junior Software Engineer focused on Python automation, APIs, and real-world software projects."
-  />
-
-  <!-- ✅ IMPORTANT: absolute path for GitHub Pages -->
-  <link rel="stylesheet" href="/nashwan-portfolio/styles.css" />
+  <meta name="description" content="Nashwan Islam — Junior software engineer focused on Python automation and API integrations." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Background -->
+  <!-- subtle background -->
   <div class="bg-bubbles" aria-hidden="true">
     <span class="bubble b1"></span>
     <span class="bubble b2"></span>
@@ -25,10 +19,15 @@
   <!-- Header -->
   <header class="header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#top">Nashwan<span>.</span></a>
+      <a class="brand" href="#top" aria-label="Go to top">Nashwan<span>.</span></a>
 
-      <nav class="nav">
-        <ul class="nav-links">
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+          <span class="sr-only">Open menu</span>
+          <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -40,8 +39,8 @@
     </div>
   </header>
 
+  <!-- Hero -->
   <main>
-    <!-- Hero -->
     <section class="hero">
       <div class="container hero-grid">
         <div>
@@ -53,8 +52,9 @@
           </p>
 
           <p class="hero-blurb">
-            I build practical, engineer-ready software using Python automation and APIs.
-            Focused on shipping real projects—not just coursework.
+            Junior software engineer focused on building reliable Python automation and API-driven systems.
+            I design tools that reduce manual work, integrate external services, and follow clean, maintainable
+            engineering practices.
           </p>
 
           <div class="hero-cta">
@@ -69,23 +69,15 @@
           </div>
 
           <div class="hero-links secondary">
-            <a href="https://github.com/nashCoder2003" target="_blank">GitHub</a>
+            <a href="https://github.com/nashCoder2003" target="_blank" rel="noreferrer">GitHub</a>
             <span class="dot">•</span>
-            <a
-              href="https://www.linkedin.com/in/nashwan-islam-b0071921b"
-              target="_blank"
-            >LinkedIn</a>
+            <a href="https://www.linkedin.com/in/nashwan-islam-b0071921b" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
 
         <div class="hero-media">
           <div class="avatar-wrap">
-            <!-- ✅ IMPORTANT: absolute path -->
-            <img
-              class="avatar"
-              src="/nashwan-portfolio/assets/headshot.jpeg"
-              alt="Headshot of Nashwan Islam"
-            />
+            <img class="avatar" src="assets/headshot.jpeg" alt="Headshot of Nashwan Islam" />
           </div>
         </div>
       </div>
@@ -95,14 +87,26 @@
     <section class="section alt" id="about">
       <div class="container">
         <h2 class="section-title">About</h2>
+
         <p class="section-text">
-          I’m a Computer Science major at George Mason University focused on software
-          engineering fundamentals, automation, and API-driven systems.
+          I’m a Computer Science major at George Mason University with a strong focus on software engineering fundamentals
+          and real-world application development. My work centers on Python automation, API integrations, and building
+          systems that are practical, readable, and easy to extend.
         </p>
+
         <p class="section-text">
-          Actively seeking software engineering internships where I can contribute to
-          production code and grow as an engineer.
+          I’m seeking software engineering internships where I can contribute to production code, collaborate with
+          engineers, and continue developing scalable, real-world solutions.
         </p>
+
+        <div class="callout">
+          <h3 class="callout-title">What I build</h3>
+          <ul class="bullets">
+            <li><strong>Automation systems:</strong> Python tools that eliminate repetitive workflows using APIs.</li>
+            <li><strong>Integration-focused projects:</strong> Connecting external services with clean, structured logic.</li>
+            <li><strong>Engineer-ready codebases:</strong> Organized projects with clear intent, documentation, and extensibility.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -110,31 +114,44 @@
     <section class="section" id="experience">
       <div class="container">
         <h2 class="section-title">Experience</h2>
+        <p class="section-text">
+          Applied engineering work across automation, product prototyping, and technical communication.
+        </p>
 
         <article class="card">
-          <h3>Student Panelist — Virginia AI Symposium</h3>
-          <p class="meta">Jan 2026 – Present</p>
+          <div class="card-head">
+            <h3>Student Panelist — Virginia AI Symposium</h3>
+            <div class="meta">Contract • Jan 2026 – Present • Virginia</div>
+          </div>
           <ul class="bullets">
-            <li>Represented GMU in a multi-institution AI symposium.</li>
-            <li>Discussed AI ethics, academic policy, and student impact.</li>
+            <li>Selected to represent George Mason University on a multi-institution AI symposium student panel.</li>
+            <li>Discussed ethical AI use, academic policy, and student impact in higher education with faculty and peers.</li>
+            <li>Strengthened technical communication through structured discussion and audience Q&amp;A.</li>
           </ul>
         </article>
 
         <article class="card">
-          <h3>Hackathon Project — GradGPT</h3>
-          <p class="meta">HackFax Hackathon • 2025</p>
+          <div class="card-head">
+            <h3>Hackathon Project — GradGPT (Prototype)</h3>
+            <div class="meta">HackFax Hackathon • 2025 • Fairfax, VA</div>
+          </div>
           <ul class="bullets">
-            <li>Built a prototype to help students discover internships.</li>
-            <li>Designed workflow and application logic.</li>
+            <li>Collaborated in a team to prototype <strong>GradGPT</strong>, a tool to help students discover and organize internship/job opportunities.</li>
+            <li>Designed application logic and workflow for aggregating resources and surfacing relevant opportunities efficiently.</li>
+            <li>Translated a problem statement into a functional prototype under time constraints, prioritizing usability and clarity.</li>
           </ul>
         </article>
 
         <article class="card">
-          <h3>Software Developer — Python Automation</h3>
-          <p class="meta">Independent • 2024 – Present</p>
+          <div class="card-head">
+            <h3>Software Developer — Python Automation &amp; API Projects</h3>
+            <div class="meta">Independent • May 2024 – Present</div>
+          </div>
           <ul class="bullets">
-            <li>Developed automation tools using APIs and OOP.</li>
-            <li>Focused on maintainable, reusable code.</li>
+            <li>Designed and implemented Python automation tools and GUI applications through independent development.</li>
+            <li>Integrated third-party APIs and persistent data storage to build practical, user-focused software.</li>
+            <li>Applied OOP, modular architecture, and input validation to improve reliability and maintainability.</li>
+            <li>Continuously refined projects to improve structure, readability, and usability.</li>
           </ul>
         </article>
       </div>
@@ -144,38 +161,53 @@
     <section class="section alt" id="projects">
       <div class="container">
         <h2 class="section-title">Projects</h2>
+        <p class="section-text">
+          Selected projects demonstrating automation, API integration, and practical engineering workflows.
+        </p>
 
         <div class="grid">
           <div class="proj">
             <h3>Password Manager</h3>
-            <a
-              href="https://github.com/nashCoder2003/Python-Capstones/blob/main/Python%20Capstones/GUI%20version%20of%20password%20manager_day-29.py"
-              target="_blank"
-            >GitHub →</a>
+            <p>
+              Python-based credential management application with a GUI interface.
+              Focused on input validation, structured logic, and user-friendly workflows.
+            </p>
+            <div class="proj-links">
+              <a href="https://github.com/nashCoder2003/Python-Capstones/blob/main/Python%20Capstones/GUI%20version%20of%20password%20manager_day-29.py" target="_blank" rel="noreferrer">GitHub →</a>
+            </div>
           </div>
 
           <div class="proj">
             <h3>Habit Tracker (Pixela API)</h3>
-            <a
-              href="https://github.com/nashCoder2003/Python-Capstones/blob/main/Python%20Capstones/Habit_tracking_project_day-37.py"
-              target="_blank"
-            >GitHub →</a>
+            <p>
+              API-driven habit tracking system using Pixela.
+              Demonstrates REST requests, authentication handling, and automated daily data logging.
+            </p>
+            <div class="proj-links">
+              <a href="https://github.com/nashCoder2003/Python-Capstones/blob/main/Python%20Capstones/Habit_tracking_project_day-37.py" target="_blank" rel="noreferrer">GitHub →</a>
+            </div>
           </div>
 
           <div class="proj">
             <h3>Stock Alert Bot</h3>
-            <a
-              href="https://github.com/nashCoder2003/Python-Capstones/blob/main/Python%20Capstones/Stock_trading_news_alert_project_day-36.py"
-              target="_blank"
-            >GitHub →</a>
+            <p>
+              Automated monitoring system that tracks stock price movement, pulls related news,
+              and triggers alerts using external APIs.
+            </p>
+            <div class="proj-links">
+              <a href="https://github.com/nashCoder2003/Python-Capstones/blob/main/Python%20Capstones/Stock_trading_news_alert_project_day-36.py" target="_blank" rel="noreferrer">GitHub →</a>
+            </div>
           </div>
 
           <div class="proj">
             <h3>Workout Logger</h3>
-            <a
-              href="https://github.com/nashCoder2003/Python-Capstones/blob/main/Python%20Capstones/Workout%20tracker%20simulation_day-38.py"
-              target="_blank"
-            >GitHub →</a>
+            <p>
+              Fitness tracking automation integrating Nutritionix and Google Sheets.
+              Designed as a lightweight data pipeline for structured activity logging.
+            </p>
+            <div class="proj-links">
+              <a href="https://github.com/nashCoder2003/Python-Capstones/blob/main/Python%20Capstones/Workout%20tracker%20simulation_day-38.py" target="_blank" rel="noreferrer">GitHub →</a>
+            </div>
           </div>
         </div>
       </div>
@@ -185,14 +217,23 @@
     <section class="section" id="skills">
       <div class="container">
         <h2 class="section-title">Skills</h2>
+        <p class="section-text">
+          Technical skills I actively use in projects and can apply in an engineering environment.
+        </p>
+
         <div class="chips">
           <span class="chip">Python</span>
           <span class="chip">APIs</span>
           <span class="chip">Automation</span>
+          <span class="chip">Data Handling</span>
+          <span class="chip">Tkinter</span>
           <span class="chip">SQL</span>
           <span class="chip">Java</span>
           <span class="chip">C</span>
           <span class="chip">Git/GitHub</span>
+          <span class="chip">OOP</span>
+          <span class="chip">Public Speaking</span>
+          <span class="chip">AI Ethics</span>
         </div>
       </div>
     </section>
@@ -201,41 +242,131 @@
     <section class="section alt" id="certs">
       <div class="container">
         <h2 class="section-title">Certifications</h2>
+        <p class="section-text">
+          Certifications that reinforce my work in software development, automation, and data.
+        </p>
 
-        <ul class="bullets">
-          <li><a href="https://oneroadmap.io/skills/python/certificate/CERT-D553E249" target="_blank">Python Certification</a></li>
-          <li><a href="https://oneroadmap.io/skills/sql/certificate/CERT-F0E29954" target="_blank">SQL Certification</a></li>
-          <li><a href="https://oneroadmap.io/skills/java/certificate/CERT-00CF4540" target="_blank">Java Certification</a></li>
-          <li><a href="https://oneroadmap.io/skills/js/certificate/CERT-EBA4236B" target="_blank">JavaScript Certification</a></li>
-        </ul>
+        <div class="cert-grid">
+          <div class="cert">
+            <div class="badge">✓</div>
+            <div>
+              <h3>Java Certification</h3>
+              <p>Core Java fundamentals including OOP, control flow, methods, and building structured programs.</p>
+              <a href="https://oneroadmap.io/skills/java/certificate/CERT-00CF4540" target="_blank" rel="noreferrer">View credential →</a>
+            </div>
+          </div>
+
+          <div class="cert">
+            <div class="badge">✓</div>
+            <div>
+              <h3>Python Certification</h3>
+              <p>Python proficiency across scripting, data handling, and building practical software projects.</p>
+              <a href="https://oneroadmap.io/skills/python/certificate/CERT-D553E249" target="_blank" rel="noreferrer">View credential →</a>
+            </div>
+          </div>
+
+          <div class="cert">
+            <div class="badge">✓</div>
+            <div>
+              <h3>SQL Certification</h3>
+              <p>SQL querying including joins, filtering, aggregation, and working with structured relational datasets.</p>
+              <a href="https://oneroadmap.io/skills/sql/certificate/CERT-F0E29954" target="_blank" rel="noreferrer">View credential →</a>
+            </div>
+          </div>
+
+          <div class="cert">
+            <div class="badge">✓</div>
+            <div>
+              <h3>JavaScript Certification</h3>
+              <p>JavaScript fundamentals for building interactive web behavior and dynamic UI logic.</p>
+              <a href="https://oneroadmap.io/skills/js/certificate/CERT-EBA4236B" target="_blank" rel="noreferrer">View credential →</a>
+            </div>
+          </div>
+
+          <div class="cert">
+            <div class="badge">✓</div>
+            <div>
+              <h3>100 Days of Code: The Complete Python Pro Bootcamp (Udemy)</h3>
+              <p>Hands-on training focused on Python automation, APIs, and end-to-end project implementation.</p>
+              <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-a65353f6-f1e3-47b4-8e85-bf9013eb5703.jpg" target="_blank" rel="noreferrer">View credential →</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact (THIS is the section you were missing live) -->
     <section class="section" id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
-
-        <p>
-          Email:
-          <a href="mailto:nashwanislam@gmail.com">nashwanislam@gmail.com</a>
+        <p class="section-text">
+          Open to internship opportunities, project discussions, and professional connections. Feel free to reach out.
         </p>
 
-        <p>
-          Phone:
-          <a href="tel:+17033500865">(703) 350-0865</a>
-        </p>
+        <div class="contact-split">
+          <div class="card">
+            <h3 class="card-title">Message Me</h3>
+
+            <form id="contactForm">
+              <label class="field">
+                <span>Name *</span>
+                <input id="cName" type="text" placeholder="Your name" required />
+              </label>
+
+              <label class="field">
+                <span>Email *</span>
+                <input id="cEmail" type="email" placeholder="you@example.com" required />
+              </label>
+
+              <label class="field">
+                <span>Message *</span>
+                <textarea id="cMsg" rows="6" placeholder="Write your message..." required></textarea>
+              </label>
+
+              <button class="btn primary" type="submit">Send Message</button>
+              <p class="hint" id="formHint"></p>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Direct</h3>
+            <p class="section-text" style="margin-top:0">Prefer direct contact?</p>
+
+            <div class="direct">
+              <a class="direct-row" href="mailto:nashwanislam@gmail.com">
+                <span class="direct-label">Email</span>
+                <span class="direct-value">nashwanislam@gmail.com</span>
+              </a>
+
+              <a class="direct-row" href="tel:+17033500865">
+                <span class="direct-label">Phone</span>
+                <span class="direct-value">(703) 350-0865</span>
+              </a>
+
+              <a class="direct-row" href="https://github.com/nashCoder2003" target="_blank" rel="noreferrer">
+                <span class="direct-label">GitHub</span>
+                <span class="direct-value">@nashCoder2003</span>
+              </a>
+
+              <a class="direct-row" href="https://www.linkedin.com/in/nashwan-islam-b0071921b" target="_blank" rel="noreferrer">
+                <span class="direct-label">LinkedIn</span>
+                <span class="direct-value">View profile</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container footer-inner">
         <span>© <span id="year"></span> Nashwan Islam</span>
+        <a href="#top">Back to top ↑</a>
       </div>
     </footer>
   </main>
 
-  <!-- ✅ IMPORTANT: absolute path -->
-  <script src="/nashwan-portfolio/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
