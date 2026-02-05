@@ -1,131 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nashwan Islam | Portfolio</title>
-
-  <!-- CSS -->
+  <meta name="description" content="Nashwan Islam — CS student at GMU. Projects in Python, automation, APIs, and web." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-
-  <!-- NAV -->
   <header class="header">
     <div class="container header-inner">
       <div class="brand">Nashwan<span>.</span></div>
 
-      <button class="nav-toggle">☰</button>
-
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact" class="pill">Contact</a></li>
-      </ul>
+      <nav>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link btn primary" href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero-grid" id="top">
+      <div>
+        <p style="font-weight:700;color:#2563eb;margin:0 0 10px;">Hello, I’m</p>
+        <h1 style="margin:0;font-size:54px;line-height:1.05;">Nashwan Islam</h1>
 
-  <!-- HERO -->
-  <section class="hero container hero-grid">
+        <p style="margin:14px 0 10px;font-size:18px;color:#4b5563;font-weight:600;">
+          Computer Science Student @ GMU • Python • Automation • APIs
+        </p>
 
-    <div>
-      <p class="eyebrow">Hello, I'm</p>
+        <p style="margin:0 0 18px;color:#4b5563;line-height:1.7;max-width:60ch;">
+          I build practical tools and automation projects (Python + APIs) and I’m growing into full-stack development.
+          I like shipping projects that are actually usable—not just class assignments.
+        </p>
 
-      <h1 class="hero-title">Nashwan Islam</h1>
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn ghost" href="#contact">Contact</a>
 
-      <p class="hero-subtitle">
-        Python Developer | Automation & API Systems | GMU Computer Science
+        <p style="margin-top:14px;color:#4b5563;">
+          <a href="https://github.com/nashCoder2003" target="_blank" rel="noreferrer">GitHub</a>
+          <span style="opacity:.5"> • </span>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span style="opacity:.5"> • </span>
+          <a href="#contact">Email</a>
+        </p>
+      </div>
+
+      <div style="display:flex;justify-content:center;">
+        <img class="avatar" src="assets/headshot.jpeg" alt="Nashwan headshot" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2>About</h2>
+      <p style="color:#4b5563;line-height:1.8;max-width:75ch;">
+        I’m a CS student at George Mason University focused on building strong software fundamentals (OOP, data structures)
+        while shipping projects in Python automation and API integrations. I’m looking for internships where I can contribute
+        to real software and keep leveling up.
       </p>
+    </section>
 
-      <p class="hero-blurb">
-        I build practical software tools, automate workflows, and create
-        clean, reliable systems using Python and modern development practices.
-      </p>
-
-      <div class="hero-cta">
-        <a class="btn primary" href="#contact">Contact Me</a>
-        <a class="btn ghost" href="#projects">View Projects</a>
-      </div>
-    </div>
-
-    <!-- PHOTO -->
-    <div class="hero-media">
-      <div class="avatar-wrap">
-        <img src="assets/headshot.jpg" class="avatar" alt="Nashwan headshot" />
-      </div>
-    </div>
-
-  </section>
-
-
-  <!-- ABOUT -->
-  <section id="about" class="section container">
-    <h2 class="section-title">About</h2>
-    <p class="section-text">
-      Computer Science student at George Mason University focused on automation,
-      APIs, and building software that solves real-world problems. Passionate about
-      clean code, scalable systems, and practical engineering.
-    </p>
-  </section>
-
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section container">
-    <h2 class="section-title">Projects</h2>
-
-    <div class="grid">
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <h2>Experience</h2>
 
       <div class="proj">
-        <h3>Password Manager</h3>
-        <p>Secure credential manager built with Python and Tkinter GUI.</p>
+        <h3 style="margin:0 0 8px;">Digital Associate (Volunteer) — BacharLorai</h3>
+        <p style="margin:0;color:#4b5563;line-height:1.7;">
+          Supporting website and digital operations. (Add your real responsibilities once you’ve done 2–3 concrete tasks.)
+        </p>
+        <ul style="color:#4b5563;line-height:1.7;margin-top:10px;">
+          <li>Website improvements: structure, layout, and content updates.</li>
+          <li>Collaborating with team members remotely with flexible hours.</li>
+        </ul>
       </div>
+    </section>
 
-      <div class="proj">
-        <h3>Habit Tracker API</h3>
-        <p>Tracks daily habits using Pixela API integration.</p>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+
+      <div class="grid">
+        <div class="proj">
+          <h3>Password Manager</h3>
+          <p>Secure credential manager built with Python and Tkinter GUI.</p>
+          <p><a href="https://github.com/nashCoder2003" target="_blank" rel="noreferrer">GitHub →</a></p>
+        </div>
+
+        <div class="proj">
+          <h3>Habit Tracker API</h3>
+          <p>Tracks daily habits using Pixela API integration.</p>
+          <p><a href="https://github.com/nashCoder2003" target="_blank" rel="noreferrer">GitHub →</a></p>
+        </div>
+
+        <div class="proj">
+          <h3>Stock Alert Bot</h3>
+          <p>Automated stock monitoring with news + SMS alerts.</p>
+          <p><a href="https://github.com/nashCoder2003" target="_blank" rel="noreferrer">GitHub →</a></p>
+        </div>
+
+        <div class="proj">
+          <h3>Workout Logger</h3>
+          <p>Nutritionix API + Google Sheets tracking system.</p>
+          <p><a href="https://github.com/nashCoder2003" target="_blank" rel="noreferrer">GitHub →</a></p>
+        </div>
       </div>
+    </section>
 
-      <div class="proj">
-        <h3>Stock Alert Bot</h3>
-        <p>Automated stock monitoring with news + SMS alerts.</p>
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <div>
+        <span class="chip">Python</span>
+        <span class="chip">Java</span>
+        <span class="chip">APIs</span>
+        <span class="chip">Git</span>
+        <span class="chip">Automation</span>
+        <span class="chip">OOP</span>
+        <span class="chip">HTML/CSS</span>
       </div>
+    </section>
 
-      <div class="proj">
-        <h3>Workout Logger</h3>
-        <p>Nutritionix API + Google Sheets tracking system.</p>
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p style="color:#4b5563;">Put your real links here.</p>
+
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;">
+        <a class="btn primary" href="mailto:YOUR_EMAIL_HERE">Email Me</a>
+        <a class="btn ghost" href="https://github.com/nashCoder2003" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-
-  <!-- SKILLS -->
-  <section id="skills" class="section container">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="chips">
-      <span class="chip">Python</span>
-      <span class="chip">Java</span>
-      <span class="chip">APIs</span>
-      <span class="chip">Git</span>
-      <span class="chip">Automation</span>
-      <span class="chip">OOP</span>
-    </div>
-  </section>
-
-
-  <!-- CONTACT -->
-  <section id="contact" class="section container">
-    <h2 class="section-title">Contact</h2>
-
-    <p class="section-text">
-      Email: your@email.com
-    </p>
-  </section>
-
+    <footer class="section" style="padding-top:20px;">
+      <p style="color:#4b5563;">© <span id="year"></span> Nashwan Islam</p>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
